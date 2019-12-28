@@ -1,0 +1,48 @@
+{
+  "name": "alama-js-fullstack-bootcamp",
+  "version": "1.0.0",
+  "description": "Self Teaching Javascript fullstrack training",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tesfanur/alama-js-fullstack-bootcamp.git"
+  },
+  "keywords": [
+    "strings[template",
+    "literals/string",
+    "interpolation",
+    "trim",
+    "padding",
+    "tagged",
+    "function",
+    "template",
+    "string",
+    "difficulty",
+    "in",
+    "inline",
+    "markdown",
+    "destructuring",
+    "iterators",
+    "generators",
+    "regular",
+    "expressions",
+    "async",
+    "await",
+    "array",
+    "methods:",
+    "find",
+    "map",
+    "flat",
+    "map",
+    "includes"
+  ],
+  "author": "tesfaye belachew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tesfanur/alama-js-fullstack-bootcamp/issues"
+  },
+  "homepage": "https://github.com/tesfanur/alama-js-fullstack-bootcamp#readme"
+}
