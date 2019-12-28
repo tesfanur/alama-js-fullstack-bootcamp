@@ -61,7 +61,14 @@ console.log({
     remaining: [ 5, 6, 7, 8, 9, 10 ] }*/
 
 // destructuring while declaring
+//method 1:
 let { a, b, c } = { a: "A", b: "B", c: "C" };
+/*method 2: let a, b, c ;
+ ({ a, b, c } = { a: "A", b: "B", c: "C" };)//use parenthesis to avoid overloading the block declaration
+ 
+ method 3: let a, b, c,temp;//if don't want to use the parenthesis, use temp variable 
+ temp={ a, b, c } = { a: "A", b: "B", c: "C" };//use temp variable and then the destructuring to avoid overloading the block declaration
+*/
 console.log({ a, b, c });
 
 //swap elements using old ways i.e without using object destructuring
@@ -95,5 +102,6 @@ console.log(`swap elements of more than two elements =>`,{x,y,k,m})
   k: 'value of k',
   m: 'value of m' }
  */
+
 
 
