@@ -4,6 +4,7 @@
  * Remote Self Teaching Alama JS Full Stack Training Bootcamp
  * From Dec 14, 2019 to Feb 29, 2020
  * Addis Ababa, Ethiopia
+ * Date: Dec 20, 2019
  *
 /**
  * Learning string interpolation aka template string

@@ -4,6 +4,7 @@
  * Remote Self Teaching Alama JS Full Stack Training Bootcamp
  * From Dec 14, 2019 to Feb 29, 2020
  * Addis Ababa, Ethiopia
+ * Date: Dec 28, 2019
  */
 /*Destructuring is decomposing a structure into its individual parts
 in ES6 we can destructure arrays, objects 
