@@ -44,5 +44,8 @@
   "bugs": {
     "url": "https://github.com/tesfanur/alama-js-fullstack-bootcamp/issues"
   },
-  "homepage": "https://github.com/tesfanur/alama-js-fullstack-bootcamp#readme"
+  "homepage": "https://github.com/tesfanur/alama-js-fullstack-bootcamp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
