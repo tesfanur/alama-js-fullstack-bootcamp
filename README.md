@@ -30,3 +30,5 @@ We can also give a new name for the value we want to pull from an object
 	- Destructuring an array pattern inside and object pattern or vice versa
 	- Destructuring object inside another object or array inside another array
 Named arguments using destructuring pattern for function parameters
+
+//TODO: readme to be styled using githubs markdown
