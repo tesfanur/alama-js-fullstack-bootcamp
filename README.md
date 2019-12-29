@@ -1,14 +1,15 @@
 # Alama-JS-Fullstack-Bootcamp
 Alama Javascript Fullstack Bootcamp Training
 ## JS The Recent Parts Video Lecture by Kyle Simpson
-    Personal Note:
-    
-		By Tesfaye Belachew 
-		 
-The video is not a complete training and hence you need to surf for additional features whenever you need to extend your awareness for the available new features
+    Personal Note:By Tesfaye Belachew 
+## Day 1 Practice
+    Watched half of design for developers video by Sarah Drasner.
+## Day 2 Practice		 
+    The video is not a complete training and hence you need to surf for additional features whenever
+    you need to extend your awareness for the available new features
 ### Interpolated string literals=> aka template strings
 ### Practiced template interpolation:
--   By using variables, function calls, immediately invoked functions(IIfs), even template literals as values to be placed in the template literals' expression place holder.
+-   By using variables, function calls, immediately invoked functions(***IIfs***), even template literals as values to be placed in the template literals' expression place holder.
 
 ### Challenges
 -   I face while practicing template literals is that Kyle said we can place anything inside the place holders ${}, for instance he said we can put a whole js program inside the curly braces(```${}```). I tried a for loop to be interpolated but it couldn't work. Anyone who understands what Kyle want to teach in his template string video around 5:40?
@@ -29,4 +30,6 @@ The video is not a complete training and hence you need to surf for additional f
 -   Destructuring object inside another object or array inside another array
 -   Named arguments using destructuring pattern for function parameters
 
-##### //TODO: readme to be styled using githubs markdown. Added github markdwon preview package on my ide vs code and it makes it easy for me to preview it before i push the code to the remote repo. Marked the readme file but you can further use othe markdowns like code block to style your readme file.
+    **TODO**: readme to be styled using github's markdown. Added github markdwon preview package on my ide vs code and it makes it easy for me to preview it before i push the code to the remote repo. Marked the readme file but you can further use othe markdowns like code block to style your readme file.
+    
+## Day 3 Practice	
