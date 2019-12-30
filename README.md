@@ -84,3 +84,7 @@ Object.defineProperty(Array.prototype, "flat", {
 -   To solve this ambiguity we can use findIndex method that returns the index of the matching element or -1 if there is no matching element
 	   findIndex method did the same with indexOf method but with callback as an argument
 
+# JS The Hardest Parts Video By Will Sentance
+ Practiced Challenges published on [csbin](http://csbin.io/callbacks)
+
+
