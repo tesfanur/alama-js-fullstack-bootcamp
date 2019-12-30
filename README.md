@@ -47,7 +47,7 @@ Alama Javascript Fullstack Bootcamp Training
 -   Unable to push/pull/fetch code from remote repository while working in proxy based internet connection. Configuration of git to work with proxy setting
 -   Frustrated at first but finally got a solution after googling for the problem I face.  Just by using ```
 		git config --global http.proxy http://localhost:61521```
-- Couldn't work with flat and flatMap array methods. They returns TypeError: undefined function(may this be due to my node version?)
+- Couldn't work with flat and flatMap array methods. They return TypeError: undefined function(may this be due to my node version?)
 Eventually I have got a solution by defining a prototype property for array object as: 
 ```
 //Array.prototype.flatMap() polyfill: source: https://blog.travismclarke.com/post/flatmap-vs-map/
