@@ -77,14 +77,14 @@ Object.defineProperty(Array.prototype, "flat", {
 
 	
  - Using array methods
- -      Find and findIndex
-	      find method
-		Cons of find method
--   It returns undefined when it doesn't find a value that match the condition returned by the callback function passed to it. This can create an ambiguity whether it returns an undefined value from the array that exists as an element or if it returns it as there is no a matching element
+ - Find and findIndex
+	***Find method***
+ - Cons of find method
+ - It returns undefined when it doesn't find a value that match the condition returned by the callback function passed to it. This can create an ambiguity whether it returns an undefined value from the array that exists as an element or if it returns it as there is no a matching element
 -   To solve this ambiguity we can use findIndex method that returns the index of the matching element or -1 if there is no matching element
 	   findIndex method did the same with indexOf method but with callback as an argument
 ## Day 4 Practice
-### JS The Hardest Parts Video By Will Sentance(CodeSmith CEO)
+### JS The Hard Parts Video By Will Sentance(CodeSmith CEO)
  Practiced Challenges published on [csbin](http://csbin.io/callbacks)
  
 **Principles of JS Program**
