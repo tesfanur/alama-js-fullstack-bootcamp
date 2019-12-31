@@ -33,7 +33,7 @@ User2.increment();
 User2.increment();
 console.log({ User2 });
 
-//Method 3 Using new operator
+//Method 3 Using new operator with Object
 let User3 = new Object();
 User3.name = "username 3";
 User3.score = 7;
@@ -41,7 +41,6 @@ User3.increment = function() {
   User3.score++;
 };
 console.log({ User3 });
-
 
 //Method 4: Object Creation using functions/constructor functions
 //i.e. Define an object constructor, and then create objects of the constructed type
@@ -62,3 +61,32 @@ user4_2.increment();
 
 console.log({ user4_1, user4_2 });
 //Method 5: Creating Object using prototypal nature of JS
+const User5 = {
+    name: 'username 5',
+    score:8,
+    increment: function () {
+     this.score++;
+    }
+  };
+  let user5_1 = Object.create(User5)
+  
+  user5_1.name = "tesfa"; // "name" is a property set on "me", but not on "person"
+  user5_1.increment();// inherited properties can be overwritten
+  console.log(user5_1) 
+  
+//Method 6: Using ES6 Classes
+
+class User6 {
+  constructor(name, score) {
+    this.name = name;
+    this.score = score;
+  }
+
+  increment() {
+    this.score++;
+  }
+}
+
+let user6_1 = new User6("tesfanur", 7);
+user6_1.increment();
+console.log(user6_1);
