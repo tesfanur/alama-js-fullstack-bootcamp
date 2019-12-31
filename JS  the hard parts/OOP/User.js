@@ -70,7 +70,7 @@ const User5 = {
   };
   let user5_1 = Object.create(User5)
   
-  user5_1.name = "tesfa"; // "name" is a property set on "me", but not on "person"
+  user5_1.name = "tesfa"; // "name" is a property set on "user5_1", but not on "User5"
   user5_1.increment();// inherited properties can be overwritten
   console.log(user5_1) 
   
