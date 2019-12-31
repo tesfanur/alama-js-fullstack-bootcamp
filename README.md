@@ -25,7 +25,7 @@ Alama Javascript Fullstack Bootcamp Training
 -  Using graceful fallback/default value assignment  while attempting un existing value  ```data || [],   data || {} ```
 -  Nested array/object destructuring
 -  Note: with arrays order of destructuring matters by in objects doesn't
--  Using parenthesis () in order to avoid Overloading of curly braces(block scoping) is a must in object destructuring, hence you should embrace the whole object destructuring pattern inside braces i.e ```({a:first,b:second}=obj;)``` or Use temporary variable assignment along with the destructuring patter as : ```let temp ={a:first,b:second}=obj;```
+-  Using parenthesis () in order to avoid Overloading of curly braces(block scoping) is a must in object destructuring, hence you should embrace the whole object destructuring pattern inside braces i.e ```({a:first,b:second}=obj;)``` or Use temporary variable assignment along with the destructuring pattern as : ```let temp ={a:first,b:second}=obj;```
 -   Destructuring an array pattern inside and object pattern or vice versa
 -   Destructuring object inside another object or array inside another array
 -   Named arguments using destructuring pattern for function parameters
@@ -83,8 +83,46 @@ Object.defineProperty(Array.prototype, "flat", {
 -   It returns undefined when it doesn't find a value that match the condition returned by the callback function passed to it. This can create an ambiguity whether it returns an undefined value from the array that exists as an element or if it returns it as there is no a matching element
 -   To solve this ambiguity we can use findIndex method that returns the index of the matching element or -1 if there is no matching element
 	   findIndex method did the same with indexOf method but with callback as an argument
-
-# JS The Hardest Parts Video By Will Sentance
+## Day 4 Practice
+### JS The Hardest Parts Video By Will Sentance(CodeSmith CEO)
  Practiced Challenges published on [csbin](http://csbin.io/callbacks)
+ 
+**Principles of JS Program**
 
+  ***Global & local execution Context***
 
+  ***Global execution context***: 
+  - is generated as soon as we start running JS code
+		Local Execution Context: is generated in block scope like function call and block variable declaration
+The thread in JavaScript (JS is single thread Programming language)
+	- Single threaded (one thing at a time) 
+	- Synchronous or Asynchronous execution
+Function default return value is undefined
+
+***Running | invoking |calling a function***
+
+When you execute a function you create a new execution context comprising;
+
+	1. Thread Of execution (we go through the code in the function line by line) 
+	2. A local memory ('Variable environment') where anything defined in the function is stored 
+
+**Global memory /local memory** 
+***Call Stack***: used to keep track of execution order 
+	- It keeps track of the functions being called in JS 
+	- Tracks which execution context we are in - that is, what 
+	function is currently being run and where to return to 
+	after an execution context is popped off the stack 
+	
+	One global execution context, multiple function contexts 
+	
+	
+***Functional Programming***: is a paradigm or a means of structuring and thinking about how you code at scale.
+Functional programming core features:
+
+	1. Pure functions (no side effects) 
+	2. 'Higher order functions' - highly valuable tool 
+	3. Don't repeat yourself/DRY: the master rule for using functions/
+	4. Generalize your function so that you DRY
+
+Callbacks and higher order functions:
+Checkout the challenge exercise from [csbin](http://csbin.io/callbacks)
