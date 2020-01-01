@@ -3,7 +3,7 @@
  * Email: get.tesfaye.belachew@gmail.com
  * Remote Self Teaching Alama JS Full Stack Training Bootcamp
  * From Dec 14, 2019 to Feb 29, 2020
- * Date: Dec 31, 2019
+ * Date: Jan 01, 2020
  * Addis Ababa, Ethiopia
  */
 //clousre challenge source: http://csbin.io/closures
