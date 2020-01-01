@@ -79,7 +79,6 @@ sandra.greet(); //-> Logs 'hello'
 /*** hallenge 3/3
 Without editing the code you've already written, add an introduce method to the personStore object that logs "Hi, my name is [name]". 
  ***/
-
 // add code here
 sandra.introduce =function () {
     console.log(`Hi, my name is [${this.name}]`)
