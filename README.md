@@ -85,7 +85,7 @@ Object.defineProperty(Array.prototype, "flat", {
 	   findIndex method did the same with indexOf method but with callback as an argument
 ## Day 4 Practice
 ### JS The Hard Parts Video By Will Sentance(CodeSmith CEO)
- Practiced [callbacks](http://csbin.io/callbacks), [Closure](http://csbin.io/closures)and [OOP with JS](http://csbin.io/oop)  Challenges
+ Practiced [callbacks](http://csbin.io/callbacks), [Closure](http://csbin.io/closures) and [OOP with JS](http://csbin.io/oop)  Challenges
  
 **Principles of JS Program**
 
