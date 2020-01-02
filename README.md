@@ -126,3 +126,18 @@ Functional programming core features:
 
 Callbacks and higher order functions:
 Checkout the challenge exercise from [csbin](http://csbin.io/callbacks)
+
+# Day 6 Practice #
+
+Y. I completed solving/exercising all challenges and their extensions on:
+  - [Callbacks and Higher order functions](https://github.com/tesfanur/alama-js-fullstack-bootcamp/blob/master/JS%20%20the%20hard%20parts/callbacks_higher_order_fns__csbin_challenges.js),
+  - [Closures](https://github.com/tesfanur/alama-js-fullstack-bootcamp/blob/master/JS%20%20the%20hard%20parts/closure_csbin_challenges.js), and 
+  - [Different ways of OOP implementation with JS](https://github.com/tesfanur/alama-js-fullstack-bootcamp/blob/master/JS%20%20the%20hard%20parts/OOP/oop_csbin_challenges.js) on  http://csbin.io.
+
+***Note*** :  Challenge on OOP EXTENSION: Mixins to be solved today.
+
+In addition to that I have also studied topics on the Deep JS Foundations up to closure
+
+C. Vague challenge description on closures particularly Extension challenge number 5.
+
+T. I am going to continue studying contents on the Deep JS Foundations.
