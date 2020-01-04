@@ -77,6 +77,11 @@ const User5 = {
 //Method 6: Using ES6 Classes
 
 class User6 {
+  /**
+   * 
+   * @param {*} name 
+   * @param {*} score 
+   */
   constructor(name, score) {
     this.name = name;
     this.score = score;

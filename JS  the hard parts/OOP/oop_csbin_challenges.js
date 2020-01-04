@@ -257,7 +257,7 @@ const robotMixin = {
 
 let robotFido = new Dog();
 
-robotFido = {...robotFido,...robotMixin};/* Put code here to give Fido robot skills */
+robotFido = {...robotFido,...robotMixin};/* Put code on this line to give Fido robot skills */
 
 // /********* Uncomment to test your work! *********/
 robotFido.speak() // -> Logs "I am made of metal"
