@@ -142,9 +142,9 @@ C. Vague challenge description on closures particularly Extension challenge numb
 
 T. I am going to continue studying contents on the Deep JS Foundations.
 ## Day 8 Practice ##
-  Studied JS coercion. Coercion is a way of expressing how dynamic languages like JS convert one data type into another. There are two types of Type Coercion. Implicit and Explicit. If we use Primitive Data Type constuctor functions like Number and Boolean we are doing explicit coercion. Using toString object function is also categorized under this.
+  Studied JS coercion. ***Coercion*** is a way of expressing how dynamic languages like JS convert one data type into another. There are two types of Type Coercion. Implicit and Explicit. If we use Primitive Data Type constuctor functions like Number and Boolean we are doing explicit coercion. Using toString object function is also categorized under this.
   If we try JS to coerce by itself for example ***1+true*** , since we didn't explicitly tell JS to convert the type to a specific data type, it tries to convert to its simplest form. This way of coercion is known as implicit coercion. Here below are list of examples of the two types of coercion.
-  
+
   ``` 
 
   [].toString() =>
@@ -278,3 +278,23 @@ Number(,[object Object]) = NaN
 { value: [Function: funcExpName], valueToBoolean: true }
 
 ```
+### Tilde(~) operator ###
+
+```
+ for (let i = 0; i <=5; i++) {
+     showMsg(`~${i} =`, `-(${i}+1) =`,~i)
+ }
+/**
+  * tilde(~) operator does the mathematical formula ~N -> -(N+1)
+  * the for loop above then returns
+   
+~0 = -(0+1) = -1
+~1 = -(1+1) = -2
+~2 = -(2+1) = -3
+~3 = -(3+1) = -4
+~4 = -(4+1) = -5
+~5 = -(5+1) = -6
+  * 
+  */
+  ```
+
