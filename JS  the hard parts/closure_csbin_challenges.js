@@ -16,7 +16,7 @@ let { log: print, info: showMsg } = console,
 Create a function createFunction that creates and returns a function. 
 When that created function is called, it should print "hello". 
  */
-
+/** */
 function createFunction() {
   return function name() {
     showMsg("hello");
