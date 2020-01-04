@@ -15,6 +15,10 @@
  //now = Date.now();// ES5 only!
  var foo = "foo"
  //~N -> -(N+1)
+ //since zero is treated as a falsy value we should adjust the indexOf function to return
+ // a proper truthy value. if the indexOf function returns -1, it means the string is not found
+ // but its truthy value it true so to make is a proper truthy value we
+ //use tilde operator as follows
  if(~foo.indexOf("f")){
   showMsg(`~foo`,~foo,"found it!",`~foo.indexOf("f") =>`,~foo.indexOf("f"))
  }
