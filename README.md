@@ -83,7 +83,7 @@ Object.defineProperty(Array.prototype, "flat", {
  - It returns undefined when it doesn't find a value that match the condition returned by the callback function passed to it. This can create an ambiguity whether it returns an undefined value from the array that exists as an element or if it returns it as there is no a matching element
 -   To solve this ambiguity we can use findIndex method that returns the index of the matching element or -1 if there is no matching element
 	   findIndex method did the same with indexOf method but with callback as an argument
-## Day 4 Practice
+## Day 4 Practice ##
 ### JS The Hard Parts Video By Will Sentance(CodeSmith CEO)
  Practiced [callbacks](http://csbin.io/callbacks), [Closure](http://csbin.io/closures) and [OOP with JS](http://csbin.io/oop)  Challenges
  
@@ -141,3 +141,140 @@ In addition to that I have also studied topics on the Deep JS Foundations up to 
 C. Vague challenge description on closures particularly Extension challenge number 5.
 
 T. I am going to continue studying contents on the Deep JS Foundations.
+## Day 8 Practice ##
+  Studied JS coercion. Coercion is a way of expressing how dynamic languages like JS convert one data type into another. There are two types of Type Coercion. Implicit and Explicit. If we use Primitive Data Type constuctor functions like Number and Boolean we are doing explicit coercion. Using toString object function is also categorized under this.
+  If we try JS to coerce by itself for example ***1+true*** , since we didn't explicitly tell JS to convert the type to a specific data type, it tries to convert to its simplest form. This way of coercion is known as implicit coercion. Here below are list of examples of the two types of coercion.
+  
+  ``` 
+
+  [].toString() =>
+[1,2,3].toString() => 1,2,3
+[,].toString() => ,
+{ addition: '2+3+"test"',
+  result: '5test',
+  info: 'js computes left to right. Adding numbers with string' }
+{ addition: 'true+3+"test"',
+  result: '4test',
+  info:
+   'js computes left to right. Adding numbers, boolean and string' }
+{ addition: '4+true+"2"',
+  result: '52',
+  info:
+   'js computes left to right. Adding numbers, boolean and string' }
+{ subtraction: '4-"4"',
+  result: 0,
+  info:
+   'js computes left to right. subtracting a number and number in quotation mark' }
+{ subtraction: '4-false',
+  result: 4,
+  info:
+   'js computes left to right. subtracting a number and boolean value' }
+{ subtraction: '4-true',
+  result: 3,
+  info:
+   'js computes left to right. subtracting a number and boolean value' }
+===========Numbers to Boolean conversion==========
+Boolean(-5000.25) = true
+Boolean(-40000) = true
+Boolean(-3) = true
+Boolean(-2) = true
+Boolean(-1) = true
+Boolean(-0.5) = true
+Boolean(0) = false
+Boolean(0.5) = true
+Boolean(1) = true
+Boolean(2) = true
+Boolean(3) = true
+Boolean(40000) = true
+Boolean(5000.25) = true
+============Strings type Conversion=========
+Boolean() = false
+Number() = 0
+Boolean( ) = true
+Number( ) = 0
+Boolean(any string) = true
+Number(any string) = NaN
+Boolean(2) = true
+Number(2) = 2
+Boolean(-2) = true
+Number(-2) = -2
+============Objects type Conversion=========
+Boolean() = true
+.toString()) =
+Boolean() = true
+.toString()) =
+Boolean(,,,) = true
+,,,.toString()) = ,,, ,,,
+Boolean(1,2,3) = true
+1,2,3.toString()) = 1,2,3 1,2,3
+Boolean(,) = true
+,.toString()) = , ,
+Boolean([object Object]) = true
+[object Object].toString()) = [object Object] [object Object]
+Boolean([object Object],[object Object]) = true
+[object Object],[object Object].toString()) = [object Object],[object Object] [object Object],[object Object]
+============JS type System=========
+typeof typeof 26 => string
+typeof 'you are awesome string!' => string
+typeof 42 => number
+typeof true => boolean
+typeof undefined  => undefined
+typeof {name: 'aman'} => object
+typeof [] => object
+typeof Symbol() => symbol
+typeof function foo(){} => function
+typeof foo => function
+typeof funcExpName => undefined
+typeof normalFunc => function
+============valueOf and toString JS functions=========
+valueOf function foo(){} => function foo() {}
+valueOf foo => function funcExpName(params) {
+  return;
+}
+valueOf normalFunc => function normalFunc(params) {
+  return;
+}
+foo.toString() => function funcExpName(params) {
+  return;
+}
+normalFunc.toString() => function normalFunc(params) {
+  return;
+}
+============toNumber Coercion=========
+Number() = 0
+Number(0) = 0
+Number(-0) = 0
+Number(  008 ) = 8
+Number(3.14159) = 3.14159
+Number(0.) = 0
+Number(.0) = 0
+Number(.) = NaN
+Number(0xaf) = 175
+Number(false) = 0
+Number(true) = 1
+Number(NaN) = NaN
+Number(undefined) = NaN
+Number(null) = 0
+Number([object Object]) = NaN
+Number([object Object]) = NaN
+Number() = 0
+Number(,[object Object]) = NaN
+{ value: '', valueToBoolean: false }
+{ value: 0, valueToBoolean: false }
+{ value: 0, valueToBoolean: false }
+{ value: -0, valueToBoolean: false }
+{ value: null, valueToBoolean: false }
+{ value: NaN, valueToBoolean: false }
+{ value: false, valueToBoolean: false }
+{ value: undefined, valueToBoolean: false }
+{ value: 'any string different from empty string',
+  valueToBoolean: true }
+{ value: 28, valueToBoolean: true }
+{ value: { a: 'A' }, valueToBoolean: true }
+{ value: {}, valueToBoolean: true }
+{ value: [], valueToBoolean: true }
+{ value: [ 1, 2, [ 9 ] ], valueToBoolean: true }
+{ value: true, valueToBoolean: true }
+{ value: [Function: funcExpName], valueToBoolean: true }
+
+```
